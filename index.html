@@ -13,6 +13,9 @@
   <!-- Remix Icon Link -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+  <!-- Swiper Slider Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
   <!-- Main Stylesheet Link -->
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/main.css">
@@ -67,6 +70,7 @@
       <div class="overlay"></div>
     </section>
 
+    <!-- Meet Section -->
     <section class="meet-section section">
       <div class="container">
         <div class="meet-wrapper">
@@ -87,9 +91,117 @@
         </div>
       </div>
     </section>
+
+    <!-- Features Section -->
+    <section class="features-section section">
+      <div class="container">
+        <div class="features-wrapper">
+          <div class="features">
+            <div class="features-icon">
+              <img src="images/about-icon-1.svg" alt="">
+            </div>  
+            <h4>For All Skin Types</h4>
+            <p>곤홀룰망다 츨뵤안고 미시의 듄틔는 몬자라효로는 히알덥틱어 건극애어우다 호우듯이 쇽메릐를 라미오 가사녀메다. 당아는 엖기며</p>
+          </div>
+          <div class="features">
+            <div class="features-icon">
+              <div class="features-icon">
+                <img src="images/about-icon-2.svg" alt="">
+              </div>
+            </div>
+            <h4>100% Organic</h4>
+            <p>곤홀룰망다 츨뵤안고 미시의 듄틔는 몬자라효로는 히알덥틱어 건극애어우다 호우듯이 쇽메릐를 라미오 가사녀메다. 당아는 엖기며</p>
+          </div>
+          <div class="features">
+            <div class="features-icon">
+              <img src="images/about-icon-3.svg" alt="">
+            </div>
+            <h4>Cuelty-Free</h4>
+            <p>곤홀룰망다 츨뵤안고 미시의 듄틔는 몬자라효로는 히알덥틱어 건극애어우다 호우듯이 쇽메릐를 라미오 가사녀메다. 당아는 엖기며</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider-section section">
+      <div class="container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slider-image">
+                <img src="images/slide-image-1.jpeg" alt="">
+              </div>
+              <div class="slider-text">
+                <h4>천연 재료로부터 만들어진 자연의<br>향기를 만듭니다.</h4>
+                <p>아왼드스내곴더쵤거에 닐완막은 애스를 징라다와 만쿠나잔 안둔녀욋레와 디으힐다 거토앙이는데 록이오오는 자흐는, 둘릐가.</p>
+                <a href="#" class="common-btn">Show More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-image">
+                <img src="images/slide-image-2.jpeg" alt="">
+              </div>
+              <div class="slider-text">
+                <h4>천연 재료로부터 만들어진 자연의<br>향기를 만듭니다.</h4>
+                <p>아왼드스내곴더쵤거에 닐완막은 애스를 징라다와 만쿠나잔 안둔녀욋레와 디으힐다 거토앙이는데 록이오오는 자흐는, 둘릐가.</p>
+                <a href="#" class="common-btn">Show More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-image">
+                <img src="images/slide-image-3.jpeg" alt="">
+              </div>
+              <div class="slider-text">
+                <h4>천연 재료로부터 만들어진 자연의<br>향기를 만듭니다.</h4>
+                <p>아왼드스내곴더쵤거에 닐완막은 애스를 징라다와 만쿠나잔 안둔녀욋레와 디으힐다 거토앙이는데 록이오오는 자흐는, 둘릐가.</p>
+                <a href="#" class="common-btn">Show More</a>
+              </div>
+            </div>
+          </div>
+          <!-- end of swiper-wrapper   -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev slider-btn"></div>
+        <div class="swiper-button-next slider-btn"></div>
+      </div>
+    </section>
   </div>
 
+
+
+  <!-- Swiper Slider Link -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- Javascript Link -->
   <script src="js/userInterface.js"></script>
+
+  <script>
+      const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+  </script>
 </body>
 </html>
