@@ -1,5 +1,5 @@
 @media screen and (max-width:980px){
-
+  /* header */
   header{background: #fff; border-bottom: 1px solid var(--color-gray-d);}
   header .container{grid-template-columns: 1fr 1fr;}
   header .container > *{display: none;}
@@ -8,13 +8,32 @@
 
   .overlay{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #fff; opacity: .4;}
 
+  /* landing page */
   .landing-text-box h1{text-shadow: 1px 1px 1px var(--color-gray-2);}
   .landing-text-box p{width: var(--ls-1-2);}
 
+  /* meet section */
   .meet-section .meet-text-box p{font-size: var(--fs-16);}
 
+  /* features section */
   .features-section{padding: var(--el-section-small) 0;}
   .features-section .features{padding: var(--el-medium);}
+
+  /* slider section */
+  .slider-section .slider-text h4{font-size: var(--fs-20);}
+  .slider-section .slider-btn{width: 45px; height: 45px;}
+  .swiper-button-next:after, .swiper-button-prev:after{font-size: 1rem;}
+  .swiper-button-prev{left:var(--swiper-navigation-sides-offset,25px); right:auto;} 
+  .swiper-button-next{right:var(--swiper-navigation-sides-offset,25px); left:auto;}
+
+  /* offer section */
+  .product-frame{font-size: var(--fs-20); padding: var(--el-normal);}
+  /* .product-text p{display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 3;} */
+
+  /* review section */
+  .review-section .review-frame{padding: var(--el-normal);}
+  .review-section .review-item{padding: var(--el-medium);}
+
 } 
 
 @media screen and (max-width:786px){
@@ -29,6 +48,18 @@
 
   .features-section .features-wrapper{flex-direction: column; align-items: center;}
   .features-section .features{width: 60%;}
+
+  /* slider section */
+  .slider-section .slider-btn{display: none;}
+  .slider-section .swiper-slide{flex-direction: column; row-gap: var(--el-wide);}
+  .slider-section .swiper-slide > div{width: 80%; margin: auto;}
+  .slider-section .slider-text{align-items: center; text-align: center;}
+
+  /* offer section */
+  .product-frame{width: var(--ls-1-2); padding: var(--el-normal);}
+
+  /* review section */
+  .review-section .review-frame{width: var(--ls-1-2); padding: var(--el-normal);}
 }
 
 @media screen and (max-width:600px){
@@ -47,4 +78,8 @@
   .meet-section .meet-wrapper > div.meet-image-box{padding: 0 5%;}
 
   .features-section .features{width: 90%;}
+
+  /* slider section */
+  .slider-section .swiper-slide > div{width: 90%; margin: auto;}
+
 }
