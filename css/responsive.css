@@ -34,6 +34,9 @@
   .review-section .review-frame{padding: var(--el-normal);}
   .review-section .review-item{padding: var(--el-medium);}
 
+  /* insta section */
+  .insta-section .insta-wrapper{column-gap: var(--el-small);}
+  .insta-section .insta-info h4{font-size: var(--fs-name);}
 } 
 
 @media screen and (max-width:786px){
@@ -41,11 +44,13 @@
   .container{padding: 0 var(--el-medium);}
   .section{padding: var(--el-section-small) var(--el-medium);}
 
+  /* meet section */
   .meet-section .meet-wrapper{flex-direction: column; row-gap: var(--el-wide);}
   .meet-section .meet-wrapper > div.meet-text-box{width: 100%; padding: 0 10%;}
   .meet-section .meet-text-box p{margin: 0; width: 100%;}
   .meet-section .meet-wrapper > div.meet-image-box{width: 100%; padding: 0 10%;}
 
+  /* features section */
   .features-section .features-wrapper{flex-direction: column; align-items: center;}
   .features-section .features{width: 60%;}
 
@@ -60,26 +65,42 @@
 
   /* review section */
   .review-section .review-frame{width: var(--ls-1-2); padding: var(--el-normal);}
+
+  /* insta section */
+  .insta-section .insta-wrapper{grid-template-columns: 1fr 1fr;}
+  .insta-section .insta-right-image{display: none;}
 }
 
 @media screen and (max-width:600px){
   .section{padding: var(--el-section-small) 0;}
 
+  /* landing page */
   #main-section img{left: 50%; transform: translateX(-50%);}
   .landing-text-box{text-align: center;}
   .landing-text-box h1{text-align: center; font-size: 1.8rem;}
   .landing-text-box p{margin: auto; width: 90%;}
   .overlay{opacity: .7;}
 
+  /* meet section */
   .meet-section .meet-wrapper > div.meet-image-box{column-gap: var(--el-normal);}
   .meet-section .meet-left-image{row-gap: var(--el-normal);}
 
   .meet-section .meet-wrapper > div.meet-text-box{padding: 0 5%;}
   .meet-section .meet-wrapper > div.meet-image-box{padding: 0 5%;}
 
+  /* features section */
   .features-section .features{width: 90%;}
 
   /* slider section */
   .slider-section .swiper-slide > div{width: 90%; margin: auto;}
 
+  /* offer section */
+  .product-frame{width: 100%;}
+
+  /* review section */
+  .review-section .review-frame{width: 100%;}
+
+  /* gallery section */
+  .grid-item{width: var(--ls-1-2); padding: .25rem;}
+  .box-sizer{width: var(--ls-1-2);}
 }

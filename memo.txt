@@ -1,3 +1,7 @@
 www.dabipyeung.com/soaply
 https://swiperjs.com/get-started  swiper slider
 ㅇㅏ니면 slick slider
+
+수정사항
+1. special offers 상품 설명글 반응형 글 행수 줄이기 
+2. json cors오류 수정

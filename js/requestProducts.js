@@ -1,4 +1,4 @@
-const products = document.querySelector('.products')
+const products = document.querySelector('.products');
 // console.log(products);
 
 const getProductData = async () => {
@@ -13,8 +13,9 @@ const getProductData = async () => {
             <img src="images/${item.pro_img}" alt="">
             <div class="product-text">
               <h4>${item.pro_name}</h4>
-              <strong>&#8361;${item.pro_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-                }</strong>
+              <strong>&#8361;${item.pro_price
+                .toString()
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</strong>
               <p>${item.pro_desc}</p>
               <a href="#" class="common-btn">자세히 보기</a>
             </div>
@@ -23,8 +24,20 @@ const getProductData = async () => {
         `;
         products.innerHTML += dataElmt;
       });
+      showLimitItems();
     })
     .catch((err) => console.log(err));
 };
 
 getProductData();
+
+function showLimitItems() {
+  const pr = document.querySelectorAll('.product-frame');
+  pr.forEach((item) => {
+    item.style.display = 'none';
+  });
+
+  for (let i = 0; i < 3; i++) {
+    pr[i].style.display = 'block';
+  }
+}

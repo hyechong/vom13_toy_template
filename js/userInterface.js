@@ -28,3 +28,14 @@ toggleMobileBtn = (e) => {
 };
 
 mobileBtn.addEventListener('click', toggleMobileBtn); //1. 클릭했을때  toggleMobileBtn 함수 실행
+
+function fitHeight() {
+  const originalHeight = $('#h').height();
+  $('#fh').height(originalHeight);
+}
+
+fitHeight();
+
+$(window).on('resize', function () {
+  fitHeight();
+});
