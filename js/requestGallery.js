@@ -7,19 +7,22 @@ $(function () {
   });
 
   let items = [];
-  $.getJSON('../products.json', function (data) {
-    //console.log(data);
-    $.each(data, function (i, item) {
-      //console.log(item);
-      let galleryItems = `
+  $.getJSON(
+    'https://www.dabipyeung.com/soaply_backend/model/get_products.php?qnt=9',
+    function (data) {
+      //console.log(data);
+      $.each(data, function (i, item) {
+        //console.log(item);
+        let galleryItems = `
         <div class="grid-item"><a href="#"><img src="images/${item.pro_img}" alt=""></a></div>
       `;
-      //console.log($(galleryItems));
-      items.push($(galleryItems).get(0));
-    });
-    $('.grid').append(items);
-    $('.grid').imagesLoaded(function () {
-      $('.grid').masonry('appended', items);
-    });
-  });
+        //console.log($(galleryItems));
+        items.push($(galleryItems).get(0));
+      });
+      $('.grid').append(items);
+      $('.grid').imagesLoaded(function () {
+        $('.grid').masonry('appended', items);
+      });
+    }
+  );
 });

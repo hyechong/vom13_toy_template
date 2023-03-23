@@ -103,4 +103,17 @@
   /* gallery section */
   .grid-item{width: var(--ls-1-2); padding: .25rem;}
   .box-sizer{width: var(--ls-1-2);}
+
+  /* insta section */
+  .insta-section .insta-wrapper{grid-template-columns: 1fr; row-gap: var(--el-medium);}
+  .insta-section .insta-info {order: 1;}
+  .insta-section .insta-left-image{order: 2; width: 80%; margin: auto;}
+  /* order: 순서가 바뀜. display flex랑 grid의 하위 요소로만 쓸 수 있음. */  
+
+  /* footer section */
+  footer .footer-upper{flex-direction: column;}
+  footer .footer-logo{margin-bottom: var(--el-medium);}
+  footer .footer-info{flex-direction: column; row-gap: var(--el-medium); align-items: center;}
+  footer .footer-lower{flex-direction: column; row-gap: var(--el-medium); align-items: center;}
+  
 }
