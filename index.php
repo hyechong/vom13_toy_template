@@ -17,37 +17,22 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
   <!-- Main Stylesheet Link -->
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="/common_template_0323/css/common.css">
+  <link rel="stylesheet" href="/common_template_0323/css/header.css">
+  <link rel="stylesheet" href="/common_template_0323/css/main.css">
+  <link rel="stylesheet" href="/common_template_0323/css/responsive.css">
 </head>
 <body>
   <div class="wrapper">
     <!-- Header -->
     <header id="header" class="header">
       <div class="container">
-        <nav class="nav-wrapper">
-          <ul class="nav-lists">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Gallery</a></li>
-          </ul>
-        </nav>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/nav.php";?>
         <div class="logo">
-          <a href="#"><img src="images/logo.svg" alt="soaply"></a>
+          <a href="/common_template_0323/index.php"><img src="images/logo.svg" alt="soaply"></a>
         </div>
-        <ul class="info">
-          <li class="sns">
-            <ul>
-              <li><a href="#"><img src="images/sns-icon-1.svg" alt="instagram"></a></li>
-              <li><a href="#"><img src="images/sns-icon-2.svg" alt="facebook"></a></li>
-              <li><a href="#"><img src="images/sns-icon-3.svg" alt="pinterest"></a></li>
-            </ul>
-          </li>
-          <li class="cart"><a href="#"><i class="ri-shopping-cart-line"></i><em> (0) </em></a></li>
-          <li class="user"><a href="#"><i class="ri-user-fill"></i></a></li>
-        </ul>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/info.php";?>
+        <div class="logo">
 
         <div class="mobile-btn-wrapper">
           <div class=" mobile-btn not-active">
@@ -275,33 +260,7 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <div class="footer-upper">
-          <div class="footer-logo">
-            <a href="#"><img src="images/logo.svg" alt=""></a>
-          </div>
-          <div class="footer-info">
-            <ul class="footer-nav">
-              <li><a href="#">ChangeLog</a></li>
-              <li><a href="#">Licencing</a></li>
-              <li><a href="#">Style Guide</a></li>
-            </ul>
-            <ul class="footer-sns">
-              <li><a href="#"><img src="images/sns-icon-1.svg" alt=""></a></li>
-              <li><a href="#"><img src="images/sns-icon-2.svg" alt=""></a></li>
-              <li><a href="#"><img src="images/sns-icon-3.svg" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-        <span class="footer-line"></span>
-        <div class="footer-lower">
-          <span class="footer-copy">&copy; Copyright 2023</span>
-          <span class="byline">Powered by <a href="#">HCProject</a> - Develope By hyechong</span>
-        </div>
-      </div>
-    </footer>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/footer.php";?>
 
     <div class="top">
       <span><i class="ri-arrow-up-s-line"></i>top</span>
