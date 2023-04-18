@@ -28,11 +28,11 @@
     <header id="header" class="header">
       <div class="container">
         <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/nav.php";?>
+
         <div class="logo">
           <a href="/common_template_0323/index.php"><img src="images/logo.svg" alt="soaply"></a>
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/info.php";?>
-        <div class="logo">
 
         <div class="mobile-btn-wrapper">
           <div class=" mobile-btn not-active">
@@ -41,6 +41,11 @@
             <span class="bar_line"></span>
           </div>
       </div>
+
+      </div>
+      <div class="mobile-menu">
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/nav.php";?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/common_template_0323/include/info.php";?>
       </div>
     </header>
 
