@@ -14,16 +14,21 @@ window.addEventListener('scroll', stickyHeader);
 
 //Mobile Menu Toggle
 const mobileBtn = document.querySelector('.mobile-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 toggleMobileBtn = (e) => {
   const target = e.currentTarget; //2. 함수가 실행되면 현재 클릭한 지점의 요소를 target변수에 저장
   //console.log(target); // 3. target 변수 출력
   target.classList.toggle('active');
+  const menuHeight = mobileMenu.scrollHeight;
+  // console.log(menuHeight);
 
   if (target.classList.contains('active') /*active가 있다면*/) {
     target.classList.remove('not-active'); /*not-active를 없애준다*/
+    mobileMenu.style.height = menuHeight + 'px';
   } else {
     target.classList.add('not-active'); /*not-active를 추가해준다*/
+    mobileMenu.style.height = 0;
   }
 };
 

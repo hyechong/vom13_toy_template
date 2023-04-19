@@ -6,10 +6,13 @@
   header .logo{display: flex; justify-content: flex-start;}
   header div.mobile-btn-wrapper{display: flex; justify-content: flex-end;}
 
-  header .mobile-menu{display: block; position: absolute; left: 0; top: 100%; background: #eee; width: 100%;}
+  header .mobile-menu{display: block; position: absolute; left: 0; top: 100%; background: #fff; width: 100%; height: 0; overflow: hidden; transition: all .3s;}
   header .mobile-menu .nav-lists{flex-direction: column;}
-  header .mobile-menu .nav-lists li{display: flex;}
+  header .mobile-menu .nav-lists li{display: flex; padding-right: 0; border-top: 1px solid var(--color-gray-d);}
+  header .mobile-menu .nav-lists li:last-child{border-bottom: 1px solid var(--color-gray-d);}
   header .mobile-menu .nav-lists li a{width: 100%; text-align: center; font-size: 16px; padding: 1rem 0;}
+
+  header  .mobile-menu .info{display: flex; align-items: center; justify-content: center; padding: 1rem 0; border-bottom: 1px solid var(--color-gray-d);}
 
   .overlay{position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #fff; opacity: .4;}
 
@@ -77,6 +80,9 @@
 }
 
 @media screen and (max-width:600px){
+
+  header .mobile-menu .nav-lists li a{font-size: 14px;}
+
   .section{padding: var(--el-section-small) 0;}
 
   /* landing page */
